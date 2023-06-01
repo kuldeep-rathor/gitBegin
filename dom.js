@@ -32,14 +32,39 @@ var headerTitle= document.getElementById('main-header');
 
 
 // getElementsByTagName
-var li = document.getElementsByTagName('li');
- console.log(li);
+// var li = document.getElementsByTagName('li');
+//  console.log(li);
 
-li[1].textContent = 'Dhabord';
-li[1].style.fontWeight = 'bold';
-li[1].style.backgroundColor = 'pink';
-li[3].style.backgroundColor = 'grey';
+// li[1].textContent = 'Dhabord';
+// li[1].style.fontWeight = 'bold';
+// li[1].style.backgroundColor = 'pink';
+// li[3].style.backgroundColor = 'grey';
 
-for (var i=0; i<li.length; i++){
-    li[i].style.fontWeight ='bold'
+// for (var i=0; i<li.length; i++){
+//     li[i].style.fontWeight ='bold'
+// }
+
+// querySelector
+// var header = document.querySelector('#main-header');
+// header.style.borderBottom = ('solid 4px #ccc');
+
+// var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+// secondItem.style.backgroundColor = 'green';
+
+// var thirdItem = document.querySelector('.list-group-item:nth-child(3)');
+// thirdItem.value = " ";
+
+
+// queryselector all
+
+// var secondItem = document.querySelectorAll('.list-group-item:nth-child(2)');
+// secondItem.style.fontColor ='green';
+
+var odd = document.querySelectorAll('li:nth-child(odd)');
+for (var i=0; i<odd.length; i++ ){
+    odd[i].style.backgroundColor = 'green';
 }
+
+
+
+ 
